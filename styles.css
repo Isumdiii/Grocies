@@ -1,0 +1,1704 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 150px;
+    background-color: #f8e8a2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 45%;
+    height: auto;
+}
+
+.logo img {
+    height: auto;
+    width: 300px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.login {
+    display: flex;
+    justify-content: right;
+}
+
+.login a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #c6a514;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.login a:hover {
+    background-color: #0056b3;
+}
+
+/*Login*/
+
+.login-form {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 80vh; 
+}
+
+.login-form form {
+    background-color: rgba(238, 196, 80, 0.84);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 70%; 
+    max-width: 600px; 
+    padding: 20px; 
+}
+
+/*Used Vegetable H1 styling because something kept overridding the code*/
+
+.login-form h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+.login-form form input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px; 
+    background-color: rgba(255, 255, 255, 0.792);
+    margin-bottom: 10px; 
+    width: 100%; 
+}
+
+.login-form button {
+    background-color: #c6a514;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 15px 40px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem; 
+    cursor: pointer;
+    color: #fff;
+    margin: 10px auto; 
+    display: block; 
+}
+
+.login-form button:hover {
+    background-color: #f8e8a2;
+}
+
+/*Home page*/
+
+.home-section h3{
+    font-size: 300%;
+    color: rgb(26, 26, 23);  
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.home-section .p1 {
+    font-size: 200%;
+    color: rgb(0, 0, 0);   
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: normal;
+}
+
+.home-section .p2 {
+    font-size: 150%;
+    color: rgb(0, 0, 0);   
+    margin-bottom: 15px;
+    text-align: justify;
+    letter-spacing: normal;
+}
+
+.p2 {
+    background-color: #c6a514b4; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.home-section{
+    margin-bottom:0px;
+}
+
+.home-section {  
+    height: 644px;  
+    border-radius: 0px;
+    background-image: url(images/Background-Vegetables.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.home-section .intro{
+   justify-content: center;
+   height: auto;
+   background-color:#c6a51470;
+   border-radius: 0px;
+   width:auto;
+   margin-top: 10px;
+   margin: 10px 0px;
+   padding: 20px ;
+   align-self: auto;
+}
+
+.home-section .intro-ol .list2 {
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    margin: 29px auto;
+    display: flex;
+    align-content: center;
+    gap: 100px;
+    font-size: 150%;
+ }
+ 
+
+.home-section .intro-ul .list1{
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    margin: 29px auto;
+    display:list-item;
+    align-content: center;
+    gap: 100px;
+    font-size: 150%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 30px;
+    margin-bottom: 20px ;
+}
+
+.sellings h1{
+    background-color: #c6a514;
+    color: #f8e8a2;
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.card {
+    flex: 0 0 calc(20% - 20px);
+    background: rgb(241, 228, 203);
+    width: 400px;
+    height: 550px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card h2 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.card a {
+    width: auto;
+    margin: 20px auto;
+    padding: 8px 18px;
+    font-size: 16px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image{
+    height: 370px;
+    margin-bottom: 20px;
+    background-size: cover;
+    border: 2px solid rgb(241, 228, 203);
+    border-bottom: none;
+}
+
+.list{
+    color: white;
+    text-align: center;
+    
+}
+
+/*Home page Product Images*/
+.pro-1{
+    background-image: url(images/soy.jpg);
+}
+
+.pro-2{
+    background-image: url(images/carrots.png);
+}
+
+.pro-3{
+    background-image: url(images/cheese-wedges.jpg);
+}
+
+.pro-4{
+    background-image: url(images/face-wash.jpg);
+}
+
+.pro-5{
+    background-image: url(images/lips-stick.webp);
+}
+
+.pro-6{
+    background-image: url(images/onions.jpg);
+}
+
+.pro-7{
+    background-image: url(images/milk-tea-powder.jpeg);
+}
+
+.pro-8{
+    background-image: url(images/powder.jpg);
+}
+
+.pro-9{
+    background-image: url(images/Potatos.png);
+}
+
+.pro-10{
+    background-image: url(images/sun-cream.jpeg);
+}
+
+.card h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.card p{
+    text-align: center;
+}
+
+.card a{
+    background-color: #faba4c;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 18px;
+    display: block;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+/*About Us*/
+
+/* About Us */
+
+.aboutus h1{
+    background-color: #c6a514;
+    color: #f8e8a2;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.aboutus h2{
+    color: black;
+    text-align: center;
+    font-size: 35px;
+}
+
+.aboutus-container1{
+    display: flex;
+    grid-template-columns: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 30px;
+}
+
+.aboutus-container1 .card {
+    background: rgb(241, 228, 203);
+    width: 400px!important;
+    height: 750px!important;
+    margin: 10px;
+}
+
+.aboutus-container1 .card-image {
+    height: 200px!important;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(241, 228, 203);
+    border-bottom: none;
+}
+
+.branch1 {
+    background-image: url(images/branch1.jpg);
+}
+
+.branch2 {
+    background-image: url(images/branch2.jpg);
+}
+
+.branch3 {
+    background-image: url(images/branch3.jpg);
+}
+
+.aboutus-container1 iframe {
+    width: 100%;
+    height: 200px!important;
+}
+
+.aboutus-container1 .card h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.aboutus-container1 .card p {
+    text-align: justify;
+    background-color: rgb(241, 228, 203);
+    font-size: 10px;
+    letter-spacing: normal;
+    padding: 15px;
+}
+
+.aboutus-services h3 {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.aboutus-container2 {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.aboutus-container2 table {
+    width: 1500px;
+    height: 500px;
+    border-collapse: collapse;
+}
+
+.aboutus-container2 table th {
+    font-size: 40px; 
+    text-align: center;
+    background-color: rgb(237, 228, 211);
+}
+
+.aboutus-container2 table td {
+    text-align: left;
+    font-size: 40px; 
+    font-weight: bold;
+}
+
+.aboutus-container2 table th td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+.aboutus-container2 table th, td {
+    padding: 20px; 
+    border: 2px solid black;
+}
+
+.aboutus-container3 {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.aboutus-container3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for branch cards */
+.branchcard {
+    width: 500px;
+    padding: 20px;
+    margin: 10px auto;
+    border: 2px solid #c6a514;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.branchcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.branchcard iframe {
+    width: 100%;
+    height: 200px;
+}
+
+.branchcard:hover iframe {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.aboutus-services h2 {
+    text-align: center;
+    background-color: #c6a514;
+    padding: 10px;
+}
+
+.aboutus-container1 .card{
+    background: rgb(241, 228, 203);
+    width: 360px;
+    height: 750px;
+    margin: 10px;
+}
+
+.aboutus-container1 .card-image{
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border: 2px solid rgb(241, 228, 203);
+    border-bottom: none;
+}
+
+.branch1{
+    background-image: url(images/branch1.jpg);
+}
+
+.branch2{
+    background-image: url(images/branch2.jpg);
+}
+
+.branch3{
+    background-image: url(images/branch3.jpg);
+}
+
+.aboutus-container1 iframe {
+    width: 100%;
+    height: 200px; 
+}
+
+.aboutus-container1 .card h2{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.aboutus-container1 .card p{
+    text-align: justify;
+    background-color: rgb(241, 228, 203);
+    font-size: 20px;
+    letter-spacing: normal;
+    padding: 15px;
+}
+
+.aboutus-services h3{
+    color: black;
+    text-align: center;
+    font-size: 35px;
+}
+
+.aboutus-container2{
+    margin: 10px;
+    display: flex;
+    grid-template-columns: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.aboutus-container2 table{
+    width: 1500px;
+    height:500px;
+    border-collapse: collapse;
+}
+
+.aboutus-container2 table th{
+    font-size: 20px;
+    text-align: center; 
+    background-color: rgb(237, 228, 211);
+}
+
+.aboutus-container2 table td{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.aboutus-container2 table th td{
+    border: 1px solid #000;
+    font-size: 40px;
+    border-collapse: collapse;
+}
+
+.aboutus-container2 table th,td{
+    padding: 10px;
+    border: 2px solid black;
+}
+
+
+.aboutus-container3 {
+    display: flex; 
+    justify-content: center; 
+    max-width: 400px; 
+    margin: 0 auto; 
+  }
+  
+  .aboutus-container3 img {
+    max-width: 100%; 
+    height: auto; 
+  }
+/*Categories*/
+
+.categories-topic h1{
+    background-color: #c6a514;
+    color: #f8e8a2;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+  }
+  
+  .categories-container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+    
+  
+  .categories-container .card{
+      background: rgb(241, 228, 203);
+      width: 270px;
+      height: 400px;
+      margin: 10px;
+  }
+  
+  .categories-container .card-image{
+      height: 250px;
+      margin-bottom: 15px;
+      background-size: cover;
+  }
+  
+  .product-dairy{
+      background-image: url(images/Dairy.webp);
+  }
+  
+  .product-vege{
+      background-image: url(images/Vegetables.jpg);
+  }
+  
+  .product-cosmetics{
+      background-image: url(images/cosmetics.jpg);
+  }
+  
+  .categories-container .card h2{
+      text-align: center;
+      font-size: 20px;
+  }
+  
+  .categories-container .card p{
+      text-align: center;
+  }
+  
+  .categories-container .card a{
+      background-color: #faba4c;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      padding: 8px 18px;
+      display: block;
+      border-radius: 15px;
+      text-align: center;
+      margin: 20px 50px;
+  }
+
+/*Dairy*/
+.dairy-topic h1{
+    background-color: #c6a514;
+    color: #f8e8a2;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.dairy-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 0px 30px;
+    gap: 10px; 
+}
+
+.dairy .card{
+    flex: 0 0 calc(20% - 20px); 
+    background: rgb(241, 228, 203);
+    height: 400px;
+    margin: 10px; 
+    box-sizing: border-box;
+}
+
+.dairy .card-image{
+    height: auto;
+    width: auto;
+    margin-bottom: 15px;
+    background-size: cover;
+    border: 2px solid rgb(241, 228, 203);
+    border-bottom: none;
+}
+
+/*dairy images*/
+.dairy-1{
+    background-image: url(images/soy.jpg);
+}
+
+.dairy-2{
+    background-image: url(images/Mozzarella-cheese.webp);
+}
+
+.dairy-3{
+    background-image: url(images/milk-tea-powder.jpeg);
+}
+
+.dairy-4{
+    background-image: url(images/low-fat-milk.webp);
+}
+
+.dairy-5{
+    background-image: url(images/cheese-wedges.jpg);
+}
+
+.dairy-6{
+    background-image: url(images/cheese-spread.jpg);
+}
+
+.dairy-7{
+    background-image: url(images/ice-cream.jpg);
+}
+
+.dairy-8{
+    background-image: url(images/yoghurt.webp);
+}
+
+.dairy-9{
+    background-image: url(images/butter.jpg);
+}
+
+.dairy-10{
+    background-image: url(images/eggs.jpeg);
+}
+
+.dairy .card-image .card h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.dairy .card-image .card p{
+    text-align: center;
+}
+
+.dairy .card-image .card a{
+    background-color: #faba4c;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 18px;
+    display: block;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+
+/*Vegetables*/
+.vegetables h1{
+    background-color: #c6a514;
+    color: #f8e8a2;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+.vege-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))!important; 
+    grid-template-rows: auto;
+    gap: 15px;
+    padding: 0 30px;
+    justify-content: center!important;
+    align-items: center!important; 
+}
+
+.vege-container .card {
+    background: rgb(241, 228, 203);
+    width: 100%!important; 
+    height: 450px!important; 
+    max-width: 300px!important; 
+}
+.vege-container .card-image {
+    height: 300px!important;
+    width: 300px;
+    margin-bottom: 15px;
+    background-size: contain; 
+    border: 2px solid rgb(241, 228, 203);
+    border-bottom: none;
+}
+
+/*used important tags because another code kept overriding it*/
+
+/* Vegetable Images*/
+.vege1{
+    background-image: url(images/bell-pepper.png);
+}
+
+.vege2{
+    background-image: url(images/broccoli.png);
+}
+
+.vege3{
+    background-image: url(images/carrots.png);
+}
+
+.vege4{
+    background-image: url(images/Potatos.png);
+}
+
+.vege5{
+    background-image: url(images/onions.jpg);
+}
+
+.vege6{
+    background-image: url(images/brinjol.webp);
+}
+
+.vege7{
+    background-image: url(images/tomatos.jpg);
+}
+
+.vege8{
+    background-image: url(images/pumpkin.jpg);
+}
+
+.vege9{
+    background-image: url(images/bitter-guard.jpeg);
+}
+
+.vege10{
+    background-image: url(images/garlic.jpg);
+}
+
+.vege-container .card h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.vege-container .card p{
+    text-align: center;
+}
+
+.vege-container .card a{
+    background-color: #faba4c;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 18px;
+    display: block;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px auto;
+    width: 150px;
+}
+
+
+
+/*Cosmetics*/
+
+.cosmetic {
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
+}
+
+.cosmetics h1{
+    background-color: #c6a514;
+    color: #f8e8a2;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+  
+  
+.brief {
+    background-color: #ebb153;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 1000px; 
+    text-align: center;
+}
+
+.brief p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    letter-spacing: normal;
+}
+  
+.cosmetics-table table {
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+  
+.cosmetics-table th {
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(237, 228, 211);
+    height: 50px;
+}
+  
+.cosmetic{
+    width: 100px;
+    height: 200px;
+    margin: 0px auto;
+}
+  
+.cosmetics-table th {
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+  
+.cosmetics-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+  .cosmetics h1 {
+    background-color: #c6a514;
+    color: #f8e8a2;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+  
+.cosmetics-table .cosmetic img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cosmetics-table a {
+    background-color: #faba4c;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    display: block;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px auto;
+    width: 90px;
+}
+
+/*Order*/
+.order-form form {
+    background-color: rgba(231, 165, 73, 0.677);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.order-topic h1 {
+    background-color: #c6a514;
+    color: #f8e8a2;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px; 
+}
+
+/* Order Page Styles */
+.cart {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #c6a514;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th, #cart-table td {
+    border: 1px solid;
+    padding: 12px;
+    text-align: left;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+}
+
+.cart-table tfoot td {
+    font-weight: bold;
+}
+
+.total-price {
+    text-align: right;
+}
+
+.order-form p{
+    text-align: left;
+}
+
+/* Container for product items */
+.product-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Styling for individual product items */
+.product-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px; 
+    height: 250px; 
+    padding: 20px;
+    border: 2px solid #EB2424; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.add-to-cart-btn {
+    background-color: #77E648; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.add-to-cart-btn:hover {
+    background-color: #458B27; 
+}
+
+/*used H2 for styling cus of code issues*/
+.order-form h1 {
+    font-weight: 50;
+    text-align: center;
+    font-size: 24px; 
+}
+
+.order-form form {
+    text-align: center;
+}
+
+.order-form form input {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.792);
+    width: 100%; 
+    margin-bottom: 15px; 
+}
+
+.order-form button {
+    background-color: #cb9911;
+    border-radius: 2px;
+    border: 1px solid black;
+    padding: 12px 30px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    font-size: 30px; 
+    margin: 10px auto; 
+    cursor: pointer;
+    color: #000000;
+}
+
+.order-form button:hover {
+    background-color: #dbc250e4;
+}
+
+/*Loyalty*/
+
+.loyalty-background {
+    background-image: url(images/loyalty.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loyalty-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 30px;
+}
+
+.card1{
+    flex: 0 0 auto;
+    background: rgb(241, 228, 203);
+    width: 400px;
+    height: 550px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.loyalty-container .card1-image{
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border: 2px solid rgb(241, 228, 203);
+    border-bottom: none;
+    border-radius: 25px;
+}
+
+.loyalty-1{
+    background-image: url(images/loyalty3.png);
+}
+
+.loyalty-2{
+    background-image: url(images/loyalty1.png);
+}
+
+.loyalty-3{
+    background-image: url(images/loyalty2.png);
+}
+
+.card1 h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.card1 ul{
+    text-align: left;
+    margin-left: 30px;
+}
+
+.loyalty-form form{
+    background-color: rgba(231, 165, 73, 0.677);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.loyalty h1{
+    background-color: #c6a514;
+    color: #f8e8a2;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+  }
+  
+  .loyalty-form h1{
+    font-weight: 50;
+    text-align: center;
+  }
+  .loyalty-form form {
+    width: 90%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+
+  .loyalty-form h4{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 20px;
+  }
+.loyalty-form form input{
+    border: 1px solid black;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    background-color:rgba(255, 255, 255, 0.792);
+}
+
+.loyalty-form button{
+    background-color: #cb9911;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px 30px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.loyalty-form button:hover { 
+    background-color: #dbc250e4;
+} 
+
+.box{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*Footer*/
+
+footer {
+    background-color: #f8e8a2;
+    color: #000000;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ .logo2 img{
+    width: 150px;
+    height: 150px;  /*Adjust as needed */
+}            
+
+.contact-info .follow-us .quick-links {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.contact-info h3,.follow-us h3,.quick-links h3 {
+    text-align: center;
+    font-size: 19px;
+    color: rgb(235, 177, 69);
+}
+
+.contact-info ul ,.follow-us ul ,.quick-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.follow-us ul{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info li ,.follow-us li ,.quick-links li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.follow-us img {
+    width: 60px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.follow-us img:hover{
+    background-color: #ebb153;
+    padding: 5px;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+.quick-links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 390px) {
+
+
+    .logo {
+        width: 100%;
+        text-align:center;
+        margin-bottom: 10px; 
+    }
+
+    .logo img {
+        width: 80px; 
+    }
+
+
+    header {
+        padding: 2px; 
+    }
+
+
+    .home-section .intro-ol {
+        display: flex;
+        flex-direction: row; 
+        align-items: left; 
+        gap: 5px; 
+        margin: 10px auto; 
+        
+    }
+
+
+    .home-section .intro-ol .list2 {
+        margin: 0; 
+    }
+
+    /* Nav Bar */
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: right; 
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start; 
+        margin-top: 3px; 
+        flex-direction: row; 
+        align-items: left;
+        width: 80%; 
+        padding-left: 0; 
+    }
+
+    nav ul li {
+        margin-right: 5px; 
+    }
+
+    /* Login page */
+    nav li {
+        margin: 0.5px 0.5px;
+        font-size: 7px;
+        font-weight: bold; 
+    }
+
+    .login {
+        font-size: 5px;
+        margin-left: 0;
+        margin-top: 3px; 
+    }
+
+    .login a {
+        padding: 2px 4px;
+    }
+
+
+    .login-form {
+        padding: 3px;
+    }
+
+    /* Home Section*/
+    .home-section {
+        padding: 13.5px 6.75px;
+        font-size: 67.5%; 
+        background-size: contain; 
+        height: auto; 
+    }
+    
+   
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 100%; 
+    }
+    
+
+    .card {
+        height: 100px; 
+        width: 90%; 
+        margin-bottom: 10px; 
+        box-sizing: border-box; 
+    }
+
+    .card-image {
+        height: 112.5px; 
+        width: 112.5px; 
+    }
+    
+
+    .card a {
+        width: 60%; 
+        margin: 22.5px auto; 
+        padding: 11.25px; 
+        font-size: 6.75px; 
+    }
+
+    /*Dairy Page*/
+    .dairy h1 {
+        font-size: 18px; 
+    }
+
+  
+    .aboutus-container1 .card,
+    .categories-container {
+        align-content: center;
+        display: flex; 
+        flex-direction: column;
+    }
+    
+    /* Categories Containers*/
+    .categories-container .card {
+        width: 350px;
+        height: 500px;
+        margin-bottom: 10px; 
+    }
+    
+    
+ /* Links in Categories Container */
+.categories-container a{
+    text-align: center;
+    align-content: center;
+    width:200px;
+}
+
+/* dairy container */
+.dairy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dairy Section Cards*/
+.dairy .card {
+    width: 90%;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dairy .card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 20px; 
+}
+
+.card p{
+    font-size: 10px;
+}
+
+.dairy .card p {
+    font-size: 5px;
+}
+
+/* Branch Cards*/
+.branchcard{
+    width: 400px;
+    height:700px;
+    margin-right:10px;
+    border: #c6a514;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(198, 165, 20, 0.7);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom:15px;
+}
+
+.branchcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(198, 165, 20, 0.7);
+}
+
+
+.card-image {
+    width: auto; 
+    height: 300px; 
+    background-size: cover;
+    background-position: center;
+}
+
+/* Map iframes */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(198, 165, 20, 0.315);
+}
+
+/*About Us Styling*/
+.branchcard h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.branchcard p {
+    padding: 20px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+/* About Us Containers */
+.aboutus-container1 .card {
+    width: 100px; 
+    height: 650px;
+}
+
+
+.aboutus-container1 .card-image {
+    height: 100px; 
+    width:auto;
+}
+
+
+.aboutus-container1 .card h2 {
+    font-size: 4px; 
+}
+
+
+.aboutus-container1 .card p {
+    font-size: 4px;               
+}
+
+/* Tables Styling */
+.aboutus-container2 table {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 10px; 
+}
+
+
+.aboutus-container2 table th,
+.aboutus-container2 table td {
+    font-size: 10px;
+    padding: 5px; 
+}
+
+
+.aboutus-container2 table th {
+    font-size: 7px; 
+}
+
+
+.aboutus-services h3 {
+    font-size: 4px; 
+}
+
+
+.brief {
+    padding: 3px; 
+    max-width: calc(100% - 10px); 
+}
+
+
+.brief p {
+    font-size: 20px; 
+}
+
+/* Order Page*/
+.order h1 {
+    font-size: 7px; 
+}
+
+/* Form Styling */
+.order-form h1,
+.order-form h4,
+.order-form button {
+    font-size: 10px; 
+    padding: 2px 4px; 
+}
+
+
+.button {
+    font-size: 14px; 
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.button:hover {
+    background-color: #d47405;
+}
+
+
+.brief {
+    padding: 2px; 
+    max-width: calc(100% - 10px); 
+}
+
+/* Vegetables page Styling */
+.vege-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    grid-template-rows: auto; 
+    gap: 15px;
+    padding: 0 30px;
+    justify-content: center;
+}
+
+
+.vege-container .card {
+    background: rgb(241, 228, 203);
+    width: 100%; 
+    max-width: 350px; 
+    height: auto; 
+}
+
+
+.vege-container .card-image {
+    height: 150px;
+    background-size: cover;
+    border: 2px solid rgb(241, 228, 203);
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+/*Cosmetics Table for mobile*/
+
+.cosmetic {
+    width: 100px;
+    height: 150px;
+    margin: 0px auto;
+}
+
+.cosmetics h1{
+    background-color: #c6a514;
+    color: #f8e8a2;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    width:390px;
+}
+  
+  
+.brief {
+    background-color: #ebb153;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 1000px; 
+    text-align: center;
+}
+
+.brief p {
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    letter-spacing: normal;
+}
+
+.cosmetics-table table {
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+  
+.cosmetics-table th {
+    font-size: 10px;
+    text-align: center;
+    background-color: rgb(237, 228, 211);
+    height: 50px;
+}
+  
+.cosmetic{
+    width: 80px;
+    height: 200px;
+    margin: 0px auto;
+}
+.cosmetics-table {
+    width: 50%;
+    font-size: 14px; 
+}
+
+
+.cosmetics-table th, .cosmetics-table td {
+    padding: 8px; 
+}
+
+.cosmetics-table .cosmetic img {
+    width: 80px;
+    height: 80%;
+    object-fit: cover;
+}
+
+.button {
+    font-size: 12px; 
+    padding: 6px 10px;
+}
+
+}
+
